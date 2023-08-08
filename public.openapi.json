@@ -131,6 +131,20 @@
         ]
       }
     },
+    "/domains/bogus": {
+      "description": "A bogus endpoint for CI testing",
+      "summary": "Bogus",
+      "get": {
+        "description": "GET the bogusness",
+        "summary": "Bogus",
+        "operationId": "getBogus",
+        "responses": {
+          "204": {
+            "description": "The bogusness"
+          }
+        }
+      }
+    },
     "/domains/{uuid}": {
       "description": "Specific operations on an existing domain to read, update or delete it.",
       "summary": "Operations on a specific domain",
