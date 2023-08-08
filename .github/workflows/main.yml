@@ -18,5 +18,7 @@ jobs:
           make validate
       - run: |
           make openapi-sort
+          # touch all yaml files to ensure generate-json runs
+          touch *.yaml
           make generate-json
           git diff --exit-code
